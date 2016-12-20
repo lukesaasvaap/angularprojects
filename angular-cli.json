@@ -1,59 +1,60 @@
 {
-  "project": {
-    "version": "1.0.0-beta.22-1",
-    "name": "angular2-templating"
-  },
-  "apps": [
-    {
-      "root": "src",
-      "outDir": "dist",
-      "assets": [
-        "assets",
-        "favicon.ico"
-      ],
-      "index": "index.html",
-      "main": "main.ts",
-      "test": "test.ts",
-      "tsconfig": "tsconfig.json",
-      "prefix": "app",
-      "mobile": false,
-      "styles": [
-        "styles.css"
-      ],
-      "scripts": [],
-      "environments": {
-        "source": "environments/environment.ts",
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
-      }
-    }
-  ],
-  "addons": [],
-  "packages": [],
-  "e2e": {
-    "protractor": {
-      "config": "./protractor.conf.js"
-    }
-  },
-  "test": {
-    "karma": {
-      "config": "./karma.conf.js"
-    }
-  },
-  "defaults": {
-    "styleExt": "css",
-    "prefixInterfaces": false,
-    "inline": {
-      "style": false,
-      "template": false
+    "project": {
+        "version": "1.0.0-beta.22-1",
+        "name": "angular2-templating"
     },
-    "spec": {
-      "class": false,
-      "component": true,
-      "directive": true,
-      "module": false,
-      "pipe": true,
-      "service": true
+    "apps": [{
+        "root": "src",
+        "outDir": "dist",
+        "assets": [
+            "assets",
+            "favicon.ico"
+        ],
+        "index": "index.html",
+        "main": "main.ts",
+        "test": "test.ts",
+        "tsconfig": "tsconfig.json",
+        "prefix": "app",
+        "mobile": false,
+        "styles": [
+            "styles.css", "../node_modules/mytemplate/css/bootstrap.min.css", "../node_modules/mytemplate/css/sb-admin.css",
+            "../node_modules/mytemplate/css/plugins/morris.css", "../node_modules/mytemplate/font-awesome/css/font-awesome.min.css"
+        ],
+        "scripts": ["../node_modules/mytemplate/js/jquery.js", "../node_modules/mytemplate/js/bootstrap.min.js",
+            "../node_modules/mytemplate/js/plugins/morris/morris-data.js", "../node_modules/mytemplate/js/plugins/morris/morris.min.js", "../node_modules/mytemplate/js/plugins/morris/raphael.min.js"
+        ],
+        "environments": {
+            "source": "environments/environment.ts",
+            "dev": "environments/environment.ts",
+            "prod": "environments/environment.prod.ts"
+        }
+    }],
+    "addons": [],
+    "packages": [],
+    "e2e": {
+        "protractor": {
+            "config": "./protractor.conf.js"
+        }
+    },
+    "test": {
+        "karma": {
+            "config": "./karma.conf.js"
+        }
+    },
+    "defaults": {
+        "styleExt": "css",
+        "prefixInterfaces": false,
+        "inline": {
+            "style": false,
+            "template": false
+        },
+        "spec": {
+            "class": false,
+            "component": true,
+            "directive": true,
+            "module": false,
+            "pipe": true,
+            "service": true
+        }
     }
-  }
 }
